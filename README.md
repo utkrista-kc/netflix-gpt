@@ -1,6 +1,9 @@
 # netflix-gpt
 - Create React App
 - Configured TailwindCSS
+- Header
+- Login Form
+- Signup Form
 
 # Features
 - Login / Signup page 
@@ -17,6 +20,8 @@
 - NetflixGPT 
     - Search Bar
     - Movie Suggestions
+
+- rafce (creates boilerplate for component): react arrow functon component export
 
 
 
