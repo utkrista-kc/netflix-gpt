@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrailerVideo } from "../utils/moviesSlice";
 
 const useMovieTrailer = (movieId) => {
   const dispatch = useDispatch();
+
+  const trailerVideo = useSelector((store) => store.movies.trailerVideo);
 
   const getMovies = async () => {
     const data = await fetch(
@@ -18,8 +20,9 @@ const useMovieTrailer = (movieId) => {
     dispatch(addTrailerVideo(trailer));
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    getMovies();
+    if (!trailerVideo) getMovies();
   }, []);
 };
 

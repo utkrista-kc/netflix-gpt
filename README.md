@@ -36,6 +36,13 @@
 - GPT Search Feature
 - Multi-lingual feature in our app (feature)
 - Integrate GPI API
+- GPT Open AI API Key
+- Gpt Search API call
+- Fetched gpt movies suggestions from TMDB
+- Created gptSlice and added data
+- Reused Movie List component to make movie suggestion container
+- Memoization
+- Added .env file and adding it to .gitignore
 
 # Features
 - Login / Signup page 
